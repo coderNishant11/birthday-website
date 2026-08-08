@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#08051a" />
+    <title>Happy Birthday ❤️</title>
+     <meta name="author" content="Nishant Kumar Srivastava">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/pages/loader.css" />
+    <link rel="stylesheet" href="css/pages/screens.css" />
+  </head>
+  <body>
+    <div id="effect-layer" aria-hidden="true"></div>
+    <main>
+      <section id="countdown-screen" class="screen screen-dark active">
+        <div class="countdown-content">
+          <p class="eyebrow">Something special is about to begin</p>
+          <div id="countdown-number" class="countdown-number">3</div>
+        </div>
+      </section>
+      <section id="reminder-screen" class="screen">
+        <div class="screen-card reminder-card">
+          <div class="sparkle-icon">✦</div>
+          <p class="eyebrow">Today is different</p>
+          <h1>A cutiepie was born today...</h1>
+          <img
+            src="assets\images\panda.png"
+            alt=""
+            srcset=""
+            class="panda-body"
+          />
+          <p class="reminder-highlight">It's you.... ❤️</p>
+          <p class="soft-text">And a little surprise waiting for you.</p>
+          <button id="surprise-btn" class="primary-btn">
+            Open Surprise 🎁
+          </button>
+        </div>
+      </section>
+      <section id="cake-screen" class="screen">
+        <div class="screen-card cake-card">
+          <p class="eyebrow" id="cake-heading">Your little birthday cake</p>
+          <h2 id="cake-title">let's decorate it 🎂</h2>
+          <div class="cake-stage">
+            <div class="cake" id="cake">
+              <div class="cake-shine"></div>
+              <div class="candle c1"><span class="flame"></span></div>
+              <div class="candle c2"><span class="flame"></span></div>
+              <div class="candle c3"><span class="flame"></span></div>
+              <div class="candle c4"><span class="flame"></span></div>
+              <div class="candle c5"><span class="flame"></span></div>
+              
+              <div class="cake-layer cake-layer-top">
+                <span class="icing-drip d1"></span
+                ><span class="icing-drip d2"></span
+                ><span class="icing-drip d3"></span
+                ><span class="icing-drip d4"></span
+                ><span class="icing-drip d5"></span
+                ><span class="icing-drip d6"></span
+                >
+                
+              </div>
+              <div class="cake-layer cake-layer-bottom">
+                <span class="stripe s1"></span>
+                <span class="stripe s2"></span>
+                <span class="stripe s3"></span>
+                <span class="stripe s4"></span>
+              </div>
+              <div class="cake-decoration decoration-1"></div>
+              <div class="cake-decoration decoration-2"></div>
+              <div class="cake-decoration decoration-3"></div>
+              <div class="cake-decoration decoration-4"></div>
+              <div class="cake-decoration decoration-5"></div>
+              <div class="cherry cherry-1"></div>
+              <div class="cherry cherry-2"></div>
+              <div class="cherry cherry-3"></div>
+              <div class="cherry cherry-4"></div>
+              <div class="cake-plate"></div>
+            </div>
+          </div>
+          <p id="cake-instruction" class="cake-instruction">
+            Tap decorate to bring the cake to life.
+          </p>
+          <button id="cake-action-btn" class="primary-btn">Decorate ✨</button>
+        </div>
+      </section>
+      <section id="celebration-screen" class="screen celebration-screen">
+        <div class="celebration-content">
+            <img
+            src="assets\images\pandatree.png"
+            srcset=""
+            class="panda-body"
+          />
+          <p class="eyebrow">You are a cute panda! </p>
+          <h1 class="birthday-title">
+            Happy Birthday<br /><span>Cutiepie! ❤️</span>
+          </h1>
+          <p class="celebration-subtitle">
+            May your day be as lovely as you are.
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <audio id="candle-audio" preload="auto">
+          <source src="assets\music\birthday_piano.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/screens/countdown.js"></script>
+    <script src="js/screens/reminder.js"></script>
+    <script src="js/screens/cake.js"></script>
+    <script src="js/effects/stars.js"></script>
+    <script src="js/effects/balloons.js"></script>
+    <script src="js/effects/hearts.js"></script>
+    <script src="js/effects/confetti.js"></script>
+  </body>
+</html>

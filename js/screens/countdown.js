@@ -1,0 +1,1 @@
+(async function(){const n=qs("#countdown-number");await sleep(450);for(let i=CONFIG.countdownSeconds;i>=1;i--){n.textContent=i;n.classList.remove("countdown-number");void n.offsetWidth;n.classList.add("countdown-number");await sleep(1000)}showScreen("reminder-screen")})();

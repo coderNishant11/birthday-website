@@ -1,0 +1,623 @@
+.sparkle-icon {
+  font-size: 3rem;
+  color: #ff8bc9;
+  animation: pulseGlow 2s infinite;
+}
+.reminder-card h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4.4rem;
+  font-weight: 400;
+  line-height: 1.08;
+}
+.reminder-highlight {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #ff8bc9;
+}
+
+.panda-body{
+
+    position:relative;
+
+    bottom:0;
+
+    width:180px;
+
+    height:180px;
+
+    background: none;
+
+    border-radius:8px;
+
+}
+/* .cake-card h2 {
+  font-size: 2rem;
+}
+.cake-stage {
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cake {
+  position: relative;
+  width: 230px;
+  height: 185px;
+  animation: floatCake 3s ease-in-out infinite;
+  filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.35));
+}
+.cake-shine {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  width: 35px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(7px);
+  z-index: 10;
+}
+.cake-plate {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 226px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(#fff, #b8b8c6);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+.cake-layer {
+  position: absolute;
+  left: 17px;
+  width: 196px;
+  border-radius: 15px 15px 20px 20px;
+}
+.cake-layer-bottom {
+  bottom: 20px;
+  height: 78px;
+  background: linear-gradient(#ff78b4, #d72c73);
+  z-index: 2;
+}
+.cake-layer-top {
+  bottom: 84px;
+  height: 55px;
+  background: linear-gradient(#ff9ccc, #ff4fa3);
+  z-index: 3;
+}
+.cake-layer-top:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff6fb;
+}
+.icing-drip {
+  position: absolute;
+  top: -1px;
+  width: 18px;
+  height: 30px;
+  background: #fff6fb;
+  border-radius: 0 0 12px 12px;
+}
+.d1 {
+  left: 18px;
+}
+.d2 {
+  left: 57px;
+  height: 22px;
+}
+.d3 {
+  left: 95px;
+  height: 34px;
+}
+.d4 {
+  left: 137px;
+  height: 23px;
+}
+.d5 {
+  left: 168px;
+  height: 29px;
+}
+.stripe {
+  position: absolute;
+  bottom: 17px;
+  width: 9px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 201, 226, 0.34);
+}
+.s1 {
+  left: 45px;
+  transform: rotate(12deg);
+}
+.s2 {
+  left: 93px;
+}
+.s3 {
+  left: 141px;
+  transform: rotate(-12deg);
+}
+.candle {
+  position: absolute;
+  bottom: 139px;
+  width: 16px;
+  height: 49px;
+  border-radius: 6px;
+  background: repeating-linear-gradient(135deg, #fff 0 7px, #ff8cc4 7px 13px);
+  z-index: 6;
+}
+.c1 {
+  left: 11px;
+}
+.c2 {
+  left: 59px;
+}
+.c3 {
+  left: 107px;
+}
+.c4{
+  left:155px
+}
+.c5{
+  left: 203px;
+}
+.flame {
+  position: absolute;
+  left: 3px;
+  top: -20px;
+  width: 10px;
+  height: 20px;
+  border-radius: 50% 50% 45% 45%;
+  background: radial-gradient(
+    circle at 50% 70%,
+    #fff7a0 0 20%,
+    #ffd34e 35%,
+    #ff8b00 70%,
+    transparent 72%
+  );
+  box-shadow:
+    0 0 12px #ffae00,
+    0 0 26px rgba(255, 174, 0, 0.5);
+  opacity: 0;
+  transform: scale(0);
+}
+.cake.decorated .flame {
+  opacity: 1;
+  transform: scale(1);
+  animation: flame 0.8s ease-in-out infinite;
+}
+.cake.blown .flame {
+  animation: flameOut 0.45s ease forwards;
+}
+.cake-decoration {
+  position: absolute;
+  bottom: 75px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fff4fb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+  z-index: 7;
+  opacity: 0;
+  transform: scale(0.4);
+}
+.cake.decorated .cake-decoration {
+  animation: decoratePop 0.45s ease forwards;
+}
+.decoration-1 {
+  left: 38px;
+}
+.decoration-2 {
+  left: 74px;
+}
+.decoration-3 {
+  left: 108px;
+}
+.decoration-4 {
+  left: 144px;
+}
+.decoration-5 {
+  left: 176px;
+}
+.cherry {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e61e5b;
+  z-index: 8;
+  opacity: 0;
+  transform: scale(0);
+}
+.cake.decorated .cherry {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.35s;
+}
+.cherry-1 {
+  left: 62px;
+  bottom: 100px;
+}
+.cherry-2 {
+  left: 108px;
+  bottom: 106px;
+}
+.cherry-3 {
+  left: 154px;
+  bottom: 100px;
+}
+.cake-instruction {
+  min-height: 24px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.86rem;
+  margin-top: -4px;
+}
+.celebration-screen {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(255, 79, 163, 0.28),
+      transparent 28%
+    ),
+    linear-gradient(145deg, #08051a, #1a0c36, #08051a);
+}
+.celebration-content {
+  text-align: center;
+  padding: 20px;
+  z-index: 5;
+}
+.birthday-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.05;
+  text-shadow:
+    0 0 22px rgba(255, 79, 163, 0.8),
+    0 0 60px rgba(141, 99, 255, 0.5);
+  animation: titlePop 1.2s ease both;
+}
+.birthday-title span {
+  color: #ff8bc9;
+}
+.celebration-subtitle {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.78);
+} */
+
+.cake-card h2 {
+    font-size: 2rem;
+}
+
+.cake-stage {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cake {
+    position: relative;
+    width: 270px;
+    height: 205px;
+    animation: floatCake 3s ease-in-out infinite;
+    filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.35));
+}
+
+.cake-shine {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    width: 35px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(7px);
+    z-index: 10;
+}
+
+.cake-plate {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    width: 266px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(#fff, #b8b8c6);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.cake-layer {
+    position: absolute;
+    left: 17px;
+    width: 236px;
+    border-radius: 15px 15px 20px 20px;
+}
+
+.cake-layer-bottom {
+    bottom: 20px;
+    height: 78px;
+    background: linear-gradient(#ff78b4, #d72c73);
+    z-index: 2;
+}
+
+.cake-layer-top {
+    bottom: 84px;
+    height: 55px;
+    background: linear-gradient(#ff9ccc, #ff4fa3);
+    z-index: 3;
+}
+
+.cake-layer-top:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff6fb;
+}
+
+.icing-drip {
+    position: absolute;
+    top: -1px;
+    width: 18px;
+    height: 30px;
+    background: #fff6fb;
+    border-radius: 0 0 12px 12px;
+}
+
+.d1 {
+    left: 18px;
+}
+
+.d2 {
+    left: 57px;
+    height: 22px;
+}
+
+.d3 {
+    left: 95px;
+    height: 34px;
+}
+
+.d4 {
+    left: 137px;
+    height: 23px;
+}
+
+.d5 {
+    left: 168px;
+    height: 29px;
+}
+
+.d6{
+  left:200px;
+  height:23px;
+}
+
+.stripe {
+    position: absolute;
+    bottom: 17px;
+    width: 9px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 201, 226, 0.34);
+}
+
+.s1 {
+    left: 45px;
+    transform: rotate(12deg);
+}
+
+.s2 {
+    left: 93px;
+}
+
+.s3{
+  left: 141px
+}
+.s4 {
+    left: 189px;
+    transform: rotate(-12deg);
+}
+
+/* Five candles arranged with a gentle arc */
+.candle {
+    position: absolute;
+    width: 16px;
+    height: 49px;
+    border-radius: 6px;
+    background: repeating-linear-gradient(
+        135deg,
+        #fff 0 7px,
+        #ff8cc4 7px 13px
+    );
+    z-index: 6;
+}
+
+.c1 {
+    left: 30px;
+    bottom: 133px;
+}
+
+.c2 {
+    left: 76px;
+    bottom: 143px;
+}
+
+.c3 {
+    left: 127px;
+    bottom: 148px;
+}
+
+.c4 {
+    left: 178px;
+    bottom: 143px;
+}
+
+.c5 {
+    left: 220px;
+    bottom: 133px;
+}
+
+.flame {
+    position: absolute;
+    left: 3px;
+    top: -20px;
+    width: 10px;
+    height: 20px;
+    border-radius: 50% 50% 45% 45%;
+    background: radial-gradient(
+        circle at 50% 70%,
+        #fff7a0 0 20%,
+        #ffd34e 35%,
+        #ff8b00 70%,
+        transparent 72%
+    );
+    box-shadow:
+        0 0 12px #ffae00,
+        0 0 26px rgba(255, 174, 0, 0.5);
+    opacity: 0;
+    transform: scale(0);
+}
+
+.cake .flame {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.cake .flame.lit {
+    opacity: 1;
+    transform: scale(1);
+    animation: flame 0.8s ease-in-out infinite;
+}
+
+.cake.blown .flame {
+    animation: flameOut 0.45s ease forwards;
+}
+
+/* Cake decorations */
+.cake-decoration {
+    position: absolute;
+    bottom: 75px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #fff4fb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    z-index: 7;
+    opacity: 0;
+    transform: scale(0.4);
+}
+
+.cake.decorated .cake-decoration {
+    animation: decoratePop 0.45s ease forwards;
+}
+
+.decoration-1 {
+    left: 45px;
+}
+
+.decoration-2 {
+    left: 85.5px;
+}
+
+.decoration-3 {
+    left: 126px;
+}
+
+.decoration-4 {
+    left: 166.5px;
+}
+
+.decoration-5 {
+    left: 207px;
+}
+
+.cherry {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #e61e5b;
+    z-index: 8;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.cake.decorated .cherry {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.35s;
+}
+
+.cherry-1 {
+    left: 65.25px;
+    bottom: 100px;
+}
+
+.cherry-2 {
+    left: 105.75px;
+    bottom: 106px;
+}
+
+.cherry-3 {
+    left: 146.25px;
+    bottom: 106px;
+}
+
+.cherry-4 {
+    left: 186.75px;
+    bottom: 100px;
+}
+
+.cake-instruction {
+    min-height: 24px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.86rem;
+    margin-top: -4px;
+}
+
+/* Existing celebration styles */
+.celebration-screen {
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255, 79, 163, 0.28),
+            transparent 28%
+        ),
+        linear-gradient(145deg, #08051a, #1a0c36, #08051a);
+}
+
+.celebration-content {
+    text-align: center;
+    padding: 20px;
+    z-index: 5;
+}
+
+.birthday-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.05;
+    text-shadow:
+        0 0 22px rgba(255, 79, 163, 0.8),
+        0 0 60px rgba(141, 99, 255, 0.5);
+    animation: titlePop 1.2s ease both;
+}
+
+.birthday-title span {
+    color: #ff8bc9;
+}
+
+.celebration-subtitle {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.78);
+}

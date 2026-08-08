@@ -1,0 +1,1 @@
+const CONFIG={countdownSeconds:3,birthdayName:"Cutiepie",reminderLine:"A cutiepie was born today...",reminderHighlight:"It's you. ❤️",celebrationTitle:"Happy Birthday",celebrationName:"Cutiepie! ❤️",celebrationSubtitle:"May your day be as lovely as you are."};

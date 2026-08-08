@@ -1,0 +1,159 @@
+@keyframes pulseGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px rgba(255, 79, 163, 0.35));
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(255, 79, 163, 0.9));
+  }
+}
+@keyframes floatCake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+@keyframes flame {
+  0%,
+  100% {
+    transform: scale(0.9) rotate(-2deg);
+    opacity: 0.82;
+  }
+  50% {
+    transform: scale(1.14) rotate(3deg);
+    opacity: 1;
+  }
+}
+@keyframes flameOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  45% {
+    opacity: 0.7;
+    transform: scale(1.25, 0.65);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes balloonRise {
+  0% {
+    transform: translate3d(0, 20vh, 0) rotate(-4deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(var(--sway), -50vh, 0) rotate(4deg);
+  }
+  100% {
+    transform: translate3d(calc(var(--sway) * -1), -125vh, 0) rotate(-3deg);
+    opacity: 0;
+  }
+}
+@keyframes heartRise {
+  0% {
+    transform: translate3d(0, 15vh, 0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--drift), -115vh, 0) scale(1.35) rotate(35deg);
+    opacity: 0;
+  }
+}
+@keyframes confettiBurst {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.65) rotate(0);
+    opacity: 1;
+  }
+  45% {
+    transform: translate3d(calc(var(--x) * 0.55), var(--peak), 0) scale(1)
+      rotate(420deg);
+    opacity: 1;
+  }
+  72% {
+    transform: translate3d(var(--x), calc(var(--peak) + 8vh), 0) scale(0.9)
+      rotate(760deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(calc(var(--x) * 1.12), 20vh, 0) scale(0.5)
+      rotate(1080deg);
+    opacity: 0;
+  }
+}
+@keyframes titlePop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  65% {
+    transform: scale(1.08);
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes screenIn {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes countdownPop {
+  0% {
+    transform: scale(0.35);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+@keyframes decoratePop {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.4);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.screen.active {
+  animation: screenIn 0.55s ease both;
+}

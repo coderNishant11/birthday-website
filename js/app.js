@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{qs("#reminder-screen h1").textContent=CONFIG.reminderLine;qs("#reminder-screen .reminder-highlight").textContent=CONFIG.reminderHighlight;qs(".birthday-title").innerHTML=`${CONFIG.celebrationTitle}<br><span>${CONFIG.celebrationName}</span>`;qs(".celebration-subtitle").textContent=CONFIG.celebrationSubtitle});
